@@ -31,7 +31,7 @@
                 "public_token": "public-sandbox-5c224a01-8314-4491-a06f-39e193d5cddc"
               },
             },
-            "matchType": "STRICT",
+            "matchType": "STRICT"
           }
         },
         "responses": {
