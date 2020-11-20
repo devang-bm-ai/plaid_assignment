@@ -18,24 +18,20 @@
         "summary": "Public Token exchange",
         "operationId": "publicTokenExchange",
         "tags": [
-          ""
-        ],
+            "plaid"
+          ],
         "requestBody": {
           "description": "A access token body",
           "required": true,
+          "type": "JSON",
           "content": {
             "application/json": {
-
-              "client_id": "5fa241ed7ef0a700134a431c",
-              "secret": "c942100bc394ae4cff512881219d99",
-              "public_token": "public-sandbox-5c224a01-8314-4491-a06f-39e193d5cddc"
-
+                "client_id": "5fa241ed7ef0a700134a431c",
+                "secret": "c942100bc394ae4cff512881219d99",
+                "public_token": "public-sandbox-5c224a01-8314-4491-a06f-39e193d5cddc"
+              },
             },
-            "*/*": {
-              "schema": {
-                "$ref": "#/components/schemas/Pet"
-              }
-            }
+            "matchType": "STRICT",
           }
         },
         "responses": {
